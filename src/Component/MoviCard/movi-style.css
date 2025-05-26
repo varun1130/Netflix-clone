@@ -1,0 +1,41 @@
+
+#link .movie_cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+/* .movie_cards :hover{
+    cursor: pointer;
+} */
+#link #M_img{
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+}
+@media screen and (min-width:280px) {
+    .movie_cards{
+        width: 75%;
+        margin:5px auto;
+    }
+}
+@media screen and (min-width:425px) {
+    .movie_cards{
+        width: 40%;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:700px) {
+    .movie_cards{
+        width: 25%;
+        margin-left: 35px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .movie_cards{
+        width: 19%;
+    }
+}

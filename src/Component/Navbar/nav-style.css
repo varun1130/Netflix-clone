@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+   
+}
+#logo{
+    display: flex;
+    overflow: auto;
+    width: 200px;
+    
+}
+#img{
+    margin-top: 5px;
+}
+#name{
+    color: aliceblue;
+    font-size: 30px;  
+}
+
+.options select{
+    font-size: large;
+    padding: 13px;
+    width: 108px;
+    color: whitesmoke;
+    border: 1 solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.options button{
+    font-size: large;
+    padding: 13px;
+    width: 90px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px 7px;
+}
+@media screen and (max-width:430px) {
+    #logo{
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    #logo img{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    .options{
+        width: 50%;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .options #sel{
+        font-size: 16px;
+        padding: 6px;
+        width: 90px;
+    }
+    .options button{
+        font-size: 16px;
+        padding: 6px;
+        width: 70px;
+    }
+    @media screen and (max-width:343px) {
+         #name{
+            overflow: hidden;
+            visibility: hidden;
+        }
+        .options{
+            width: 80%;
+            display: flex;
+            padding: 5px;
+            justify-content: space-around;
+        }
+        .options button{
+            margin: 2px;
+        }
+
+        
+    }
+    
+}
