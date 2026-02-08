@@ -37,12 +37,15 @@ const MovieDetail = () => {
               <h4 id="MD_h4">{`Type: ${IdMovie.genres[0].name}`}</h4>
               <h4 id="MD_h4">{`Orgin: ${IdMovie.origin_country}`}</h4>
               <h4 id="MD_h4">{`⭐${IdMovie.vote_average.toFixed(1)}`}</h4>
-              <h4 id="MD_h4">{`🔍${IdMovie.popularity.toFixed(1)}`}</h4>
+              <h4 id="MD_h4">{`🔍${IdMovie.popularity.toFixed(1)}`}</h4> 
+              <br />
+              <h2 id="MD_overview">OverView :</h2>
+               <p style={{display:"inline"}} id ="MD_over">{IdMovie.overview}</p>
               <h4 id="MD_h4"> <a href={IdMovie.homepage} target="_blank"> HomePage </a></h4>
               </div>
             </div>
-            <h2 id="MD_overview">OverView :</h2>
-            <p id ="MD_over">{IdMovie.overview}</p>
+            
+           
           </>
         )}
       </>

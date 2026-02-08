@@ -1,122 +1,127 @@
 .head_main {
-  color: white;
-  margin: 25px auto;
-  border: none;
-  border-radius: 20px;
-  overflow: hidden;
-  width: 93%;
-  box-shadow: 1px 1px 150px rgba(255, 118, 141, 0.616);
-  height: 76vh;
-  background: linear-gradient(-180deg, #24242446, #0e0e0ec4),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/fbf440b2-24a0-49f5-b2ba-a5cbe8ea8736/web_tall_panel/IN-en-20250324-TRIFECTA-perspective_69cb00d3-7b5e-45e8-b378-7757f9c8f60b_large.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.empty {
-  height: 30vh;
-}
-.header_content {
-  height: 40vh;
-  margin-top: 2px;
-  display: grid;
-  justify-items: center;
-  text-align: center;
-}
-#header_heading {
-  font-size: xx-large;
-  margin-bottom: 0px;
-}
-#header_cont {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.innercont {
-  display: flex;
-  width: 85%;
-  justify-content: space-around;
-  margin-bottom: 40px;
-  align-items: center;
-}
-#h_search {
-  width: 65%;
-  height: 70%;
-  color: white;
-  border: 1px solid transparent;
-  padding: 5px;
-  border-radius: 15px;
-  background-color: rgba(158, 157, 157, 0.363);
-}
-#h_search::placeholder {
-  color: white;
-  margin-left: 25px;
-}
-#h_bsearch {
-  cursor: pointer;
-  height: 70%;
-  padding: 0px 10px;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  
-  background-color: red;
-}
-#HLink{
-  text-decoration: none;
-  
-}
-@media screen and (min-width:250px) and (max-width: 500px) {
-  .head_main {
-    height: 75vh;
-  }
-  .empty {
-    height: 20vh;
-  }
-  .innercont {
-    flex-direction: column;
-  }
-  .header_content{
-    height: 80%;
-  }
-  #header_heading {
-    font-size: xx-large;
-  }
-  #h_search{
-    width: 80%;
-  }
-  #h_bsearch {
-    font-size: larger;
-    width: 58%;
-    margin: 25px;
-  }
-}
-@media screen and (min-width:600px)and (max-width: 1200px) {
-  .head_main {
-    height: 75vh;
-  }
-  #header_heading {
-    font-size: xx-large;
-  }
-  #h_bsearch {
-    font-size: xx-large;
-    padding: 10px 30px;
-  }
-}
-@media screen and (min-width: 1201px) {
-  #header_heading {
-    font-size: 45px;
-  }
-  #header_cont {
-  font-size: 32px;
-  }
-  #h_bsearch {
-    font-size: xx-large;
-    padding: 15px 35px;
-  }
-  
+    color: white;
+    margin: 1.5rem auto;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    width: 93%;
+    min-height: 70vh;
+    box-shadow: 0 0 9rem rgba(255, 118, 141, 0.6);
+    background:
+        linear-gradient(180deg, #24242446, #0e0e0ec4),
+        url(../../assets/filx.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-@media screen and (max-width: 315px) {
-  #h_bsearch {
-    font-size: small;
-  }
+/* Spacer */
+.empty {
+    height: 25vh;
 }
+
+/* Header content */
+.header_content {
+    min-height: 40vh;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Text */
+#header_heading {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom: 0.25rem;
+}
+
+#header_cont {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 1.25rem;
+}
+
+/* Inner controls */
+.innercont {
+    display: flex;
+    width: min(85%, 50rem);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Search */
+#h_search {
+    width: 65%;
+    height: 2.7rem;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 1rem;
+    background-color: rgba(158, 157, 157, 0.36);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+#h_search::placeholder {
+    color: white;
+}
+
+/* Button */
+.h_bsearch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.7rem;
+  padding: 0 1.25rem;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  cursor: pointer;
+}
+
+/* Link */
+#HLink {
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .head_main {
+        min-height: 75vh;
+    }
+
+    .empty {
+        height: 18vh;
+    }
+
+    .innercont {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #h_search {
+        width: 85%;
+    }
+
+    #h_bsearch {
+        width: 100%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .head_main {
+        min-height: 85vh;
+    }
+    #header_heading{
+      font-size: 3rem;
+    }
+    #header_cont{
+      font-size: 2rem;
+    }
+    .h_bsearch{
+      font-size: 2rem;
+      padding: 1.8rem;
+    }
+}
+

@@ -53,10 +53,9 @@ function Body() {
       </div>
       <div className="body_main">
         {moviee
-          .filter(
-            (movie) =>
+          .filter((movie) =>
               movie.release_date &&
-              new Date(movie.release_date).getFullYear() > 2000
+              new Date(movie.release_date).getFullYear() > 2005
           )
           .map((movie) => (
             <Movicard movies={movie} key={movie.id} />

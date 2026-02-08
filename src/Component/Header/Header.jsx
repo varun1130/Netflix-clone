@@ -13,11 +13,9 @@ function Header() {
         <div className="header_content">
           <h1 id="header_heading">Unlimited movies, TV shows and more</h1>
           <p id="header_cont">Ready to watch?</p>
-          <div className="innercont">
-            <Link id="HLink" to="/Body">
-              <button id="h_bsearch">Movies</button>
-            </Link>
-          </div>
+          <Link to="/Body" className="h_bsearch">
+            Movies
+          </Link>
         </div>
       </div>
     </>
